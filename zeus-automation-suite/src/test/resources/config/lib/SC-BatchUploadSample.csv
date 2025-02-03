@@ -1,0 +1,5 @@
+Equipment Type,Equipment Number,TD-EP Reference #/Customer Crosswalk #,Needed By,Location Type,Address Type,Address,Loaded,Driver with Unit,Breakdown Notes,Service Line Type,VMRS System-Assembly-Component Code / AAR Job Code,VMRS Work Accomplished,VMRS Reason for Repair / AAR Defect,VMRS Position / AAR Location,Service Line Comments
+Power Unit,V210163,AA76768,,yard_check,lat_long,"41.813727, -88.211928",no,yes,Sample text,VMRS,999-999-999,52,8,G8,This is a VMRS service
+container,V210164,AA76768,,roadside,address,"2865 Duke Parkway Aurora, IL 60536",no,yes,Sample text,AAR,5655-7,,32,C,This is a AAR service
+chassis,SDFG345680,AA87879,,in_bay,lat_long,"43.42226, -84.075867",no,yes,Sample text,AAR,5651-1,,25,C,This is a AAR service
+trailer,V562494,AA87879,,yard_check,address,"4909 Campbell Dr, Atlanta, GA 30349, USA",no,yes,Sample text,VMRS,999-999-999,52,8,G8,This is a VMRS service

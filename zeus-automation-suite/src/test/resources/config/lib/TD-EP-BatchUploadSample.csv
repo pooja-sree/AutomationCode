@@ -1,0 +1,5 @@
+Equipment Type,Equipment Number,Needed By,Location Type,Address Type,Address,Loaded,Driver with Unit,Breakdown Notes,Service Line Type,VMRS System-Assembly-Component Code / AAR Job Code,VMRS Work Accomplished,VMRS Reason for Repair / AAR Defect,VMRS Position / AAR Location,Service Line Comments,To be Assigned SC Agreement Reference #
+Power Unit,V210163,,yard_check,lat_long,"41.813727, -88.211928",no,yes,Sample text,VMRS,999-999-999,52,8,G8,FMCSA will expire tommorow,
+container,V210164,,roadside,address,"2865 Duke Parkway Aurora, IL 60536",yes,yes,Sample text,AAR,5655-7,,32,C,FMCSA will expire tommorow,
+chassis,SDFG345680,,in_bay,lat_long,"43.42226, -84.075867",no,yes,Sample text,AAR,5651-1,,25,C,FMCSA will expire tommorow,
+trailer,V562494,,yard_check,address,"4909 Campbell Dr, Atlanta, GA 30349, USA",yes,yes,Sample text,VMRS,999-999-999,52,8,G8,FMCSA will expire tommorow,
