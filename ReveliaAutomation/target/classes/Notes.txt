@@ -1,0 +1,10 @@
+Element file are stored for each pages in separate file in the name of page. Example Loginpage.java
+Method file are created in the separate file in the name of Login_cases.java
+Execution file are created in the separate file in the name of feature. Login_Execution.java
+
+Pagefactory -> src/main/java -> com.revelia.pagefactory
+Methods -> src/test/java -> com.revelia.testcases
+Execution -> src/test/java -> com.revelia.stepDefinition
+Runner -> src/test/java -> com.revelia.testrunner
+feature -> src/test/resources ->Features
+

@@ -1,0 +1,38 @@
+package com.revilia.stepDefinitions;
+
+import static org.junit.Assert.assertTrue;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.revilia.pagefactory.Loginpage;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginStepDefinition {
+
+	private WebDriver driver;
+	Loginpage log = new Loginpage(driver);
+    
+    @Given("I navigate to login Page")
+    public void i_navigate_to_login_page() {
+    	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://demoqa.com/login");
+    }
+
+    @When("I enter valid Credential")
+    public void i_enter_valid_credential(String String) {
+    log.login("username","password");
+
+    }
+
+    @Then("should be logged in")
+    public void should_be_logged_in() {
+    	
+    	 assertTrue("Login successful message not displayed", log.isLoginSuccessful());
+         driver.quit();
+    }
+}
