@@ -5,31 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2637dba5-c99c-412e-bcdf-0c4e2b758e20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Reach/ReachMobile/Pages/EventCreate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Reach/ReachMobile/Pages/LoginApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Reach/ReachMobile/Pages/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Reach/ReachMobile/utils/Wait.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcase/CreateEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcase/LoginCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Reach/Runner/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Reach/StepDefinitions/AppiumDriverManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Reach/StepDefinitions/LaunchApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Feature/ALaunch.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Feature/EventCreation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScripts/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/report/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/report/report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/EventCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/LoginApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/Validation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/utils/Wait.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/Testcase/CreateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/Testcase/LoginCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/Runner/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/StepDefinitions/AppiumDriverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/StepDefinitions/LaunchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/resources/Feature/ALaunch.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/resources/Feature/EventCreation.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/spritle/Documents/AutomationCode/ReachMobileScripts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/spritle/Documents/AutomationCode/ReachMobileScriptsAndroid&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -177,8 +177,14 @@
       <workItem from="1740130602616" duration="985000" />
       <workItem from="1740151616721" duration="850000" />
       <workItem from="1740214847127" duration="3055000" />
-      <workItem from="1740223616793" duration="5704000" />
-      <workItem from="1740326311894" duration="143000" />
+      <workItem from="1740233567606" duration="1054000" />
+      <workItem from="1740326304466" duration="151000" />
+      <workItem from="1740375771044" duration="1912000" />
+      <workItem from="1740381912152" duration="3297000" />
+      <workItem from="1740461317909" duration="1768000" />
+      <workItem from="1740467786708" duration="1411000" />
+      <workItem from="1740474079831" duration="584000" />
+      <workItem from="1740476024346" duration="578000" />
     </task>
     <servers />
   </component>
