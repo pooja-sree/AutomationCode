@@ -8,15 +8,20 @@ public class Validation {
 
     AppiumDriver driver;
     Login_Elements login;
+    WaitFunctions waitFunctions;
     public Validation(AppiumDriver driver) {
         this.driver = driver;
         this.login = new Login_Elements(driver);
+        this.waitFunctions = new WaitFunctions(driver);
 
 
     }
 
     public void User(String Expecteduser,String message){
+        waitFunctions.Visibility(login.User);
         Assert.assertEquals(login.User.getText(),Expecteduser,message);
+        System.out.println("User successfully logged in");
+
 
 
 

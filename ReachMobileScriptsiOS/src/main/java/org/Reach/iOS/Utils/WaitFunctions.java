@@ -14,22 +14,15 @@ public class WaitFunctions {
     WebDriverWait wait;
 
     public WaitFunctions(AppiumDriver driver) {
-        System.out.println("🔍 Inside WaitFunctions constructor. Driver: " + driver);
-        this.driver = driver;
-        if (driver == null) {
-            System.out.println("❌ ERROR: Driver is NULL after assignment!");
-        } else {
-            System.out.println("✅ Driver successfully assigned: " + this.driver);
-        }
 
-
+        this.driver=driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-//    }
 
     public void clickElement(WebElement element) {
 
+        Visibility(element);
         System.out.println("🖱️ Waiting for element to be clickable: " + element);
         wait.until(ExpectedConditions.elementToBeClickable(element));
         System.out.println("✅ Element is clickable, clicking now...");
@@ -42,7 +35,8 @@ public class WaitFunctions {
         wait.until(ExpectedConditions.visibilityOf(ele));
     }
     public void sendKeys(WebElement element, String keys) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+        clickElement(element);
+        System.out.println("Waiting for the String to be passed: " + keys);
         element.sendKeys(keys);
     }
 }

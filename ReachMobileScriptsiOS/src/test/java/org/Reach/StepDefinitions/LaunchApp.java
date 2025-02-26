@@ -4,20 +4,23 @@ import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.Reach.TestCase.LoginApplication_Testcase;
+import org.Reach.iOS.Utils.Validation;
+import org.Reach.iOS.Utils.WaitFunctions;
 
 public class LaunchApp {
 
 
     AppiumDriver driver;
-    LoginApplication_Testcase LoginApp;
+    public LoginApplication_Testcase LoginObj;
+    public Validation valid;
+    public WaitFunctions wait;
+
 
         public LaunchApp() {
             this.driver = Hooks.getDriver();
-            System.out.println("🚀 Initializing LoginApplication_Testcase...");
-            System.out.println("🔍 Before initializing LoginApplication_Testcase. Driver: " + driver);
+            LoginObj = new LoginApplication_Testcase(driver);
+            valid = new Validation(driver);
 
-            LoginApp = new LoginApplication_Testcase(driver);
-            System.out.println("✅ LoginApplication_Testcase initialized.");
         }
 
 
@@ -25,7 +28,8 @@ public class LaunchApp {
     @Given("I launch the app on the emulator")
     public void iLaunchTheAppOnTheEmulator() {
         System.out.println("🔥 Step: Launching app on emulator...");
-        LoginApp.StartButton();
+//        LoginObj.StartButton();
+
     }
 
     @Then("The app should be open")
@@ -33,10 +37,13 @@ public class LaunchApp {
 
     @Then("I Enter User {string} Credentials Email {string} and Password {string}")
     public void iEnterUserCredentialsEmailAndPassword(String User,String email, String password) {
-//        if(User.equals("SC-Admin")){
-//            LoginApp.LoginToApplication(email, password);
-//
-//        }
+            System.out.println("Starting to enter credentials");
+            switch (User){
+                case "SC-Admin":
+                    LoginObj.LoginToApplication(email, password);
+                    valid.User("SC-ADMIN","Admin has logged in");
+                    LoginObj.LogoutOfApplication();
+            }
 
     }
 

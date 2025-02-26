@@ -25,25 +25,19 @@ public class Login_Elements extends AlertHandler{
 
     AppiumDriver driver;
     IOSDriver iosDriver;
-    WaitFunctions waitfn ;
-    Validation validation ;
+  public WaitFunctions waitfn ;
 
 
-public Login_Elements(){
-    
-}
+
+
     public Login_Elements(AppiumDriver driver) {
-        if (driver == null) {
-            throw new IllegalArgumentException("Appium Driver is null!");
-        }
-        else {
-            System.out.println("Driver found");
-        }
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
+        waitfn = new WaitFunctions(driver);
 
-        this.waitfn = new WaitFunctions(driver);
-        this.validation = new Validation(driver);
+
+
+
     }
 
 
@@ -74,47 +68,29 @@ public Login_Elements(){
    @iOSXCUITFindBy(accessibility = "Yes")
    public WebElement Yes;
 
-   @iOSXCUITFindBy(className = "XCUIElementTypeStaticText")
+   @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-ADMIN\"]")
    public WebElement User;
 
 
     public void StartButton() {
 
-
-        try {
-            System.out.println("e"+driver);
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            StartButton = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.xpath("(//XCUIElementTypeOther[@name='start_button'])[2]")));
-
-            if (StartButton != null && StartButton.isDisplayed()) {
-                System.out.println("✅ Found Start Button");
-                StartButton.click();
-            } else {
-                System.out.println("❌ Start Button is not visible.");
-            }
-        } catch (TimeoutException e) {
-            System.out.println("❌ Start Button Not Found: TimeoutException");
-        } catch (Exception e) {
-            System.out.println("❌ Unexpected Exception: " + e.getMessage());
-        }
+        StartButton.click();
     }
 
 
     public void LoginApp(String email, String password){
-        ReachEmail.sendKeys(email+ Keys.RETURN);
-//       waitfn.Visibility(ReachPassword);
-        ReachPassword.sendKeys(password+Keys.RETURN);
-        validation.User("SC-ADMIN","Admin is logged in");
+       waitfn.sendKeys(ReachEmail, email +Keys.RETURN);
+       waitfn.sendKeys(ReachPassword, password +Keys.RETURN);
 
     }
 
     public void Logout(){
-//        waitfn.Visibility(SettingsIcon);
-//        waitfn.clickElement(SettingsIcon);
-//        waitfn.Visibility(Logout);
-//        waitfn.clickElement(Logout);
-//        waitfn.Visibility(LogoutPopup);
+
+        waitfn.clickElement(SettingsIcon);
+        waitfn.clickElement(Logout);
+        waitfn.Visibility(LogoutPopup);
         Yes.click();
+        System.out.println("User Had Logged Out");
     }
 
 }
