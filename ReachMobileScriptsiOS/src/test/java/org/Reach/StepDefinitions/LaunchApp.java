@@ -41,8 +41,17 @@ public class LaunchApp {
             switch (User){
                 case "SC-Admin":
                     LoginObj.LoginToApplication(email, password);
-                    valid.User("SC-ADMIN","Admin has logged in");
+                    valid.AdminUser("SC-ADMIN","Admin has logged in");
                     LoginObj.LogoutOfApplication();
+                    break;
+
+                case "SC-Technician":
+                    LoginObj.LoginToApplication(email, password);
+                    valid.TechnicianUser("SC-TECHNICIAN","Technician has logged in");
+                    LoginObj.LogoutOfApplication();
+                    break;
+
+                default: System.out.println("Invalid User");
             }
 
     }

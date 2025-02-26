@@ -69,7 +69,10 @@ public class Login_Elements extends AlertHandler{
    public WebElement Yes;
 
    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-ADMIN\"]")
-   public WebElement User;
+   public WebElement AdminUser;
+
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-TECHNICIAN\"]")
+    public WebElement TechnicianUser;
 
 
     public void StartButton() {

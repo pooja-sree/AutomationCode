@@ -17,13 +17,15 @@ public class Validation {
 
     }
 
-    public void User(String Expecteduser,String message){
-        waitFunctions.Visibility(login.User);
-        Assert.assertEquals(login.User.getText(),Expecteduser,message);
-        System.out.println("User successfully logged in");
+    public void AdminUser(String Expecteduser,String message){
+        waitFunctions.Visibility(login.AdminUser);
+        Assert.assertEquals(login.AdminUser.getText(),Expecteduser,message);
+        System.out.println("AdminUser successfully logged in");
+    }
 
-
-
-
+    public void TechnicianUser(String Expecteduser,String message){
+        waitFunctions.Visibility(login.TechnicianUser);
+        Assert.assertEquals(login.TechnicianUser.getText(),Expecteduser,message);
+        System.out.println("TechnicianUser successfully logged in");
     }
 }
