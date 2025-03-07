@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class WaitFunctions {
 
@@ -38,6 +40,27 @@ public class WaitFunctions {
         clickElement(element);
         System.out.println("Waiting for the String to be passed: " + keys);
         element.sendKeys(keys);
+    }
+
+    public void Clear(WebElement ele){
+      clickElement(ele);
+      ele.clear();
+
+    }
+
+        public void scroll(AppiumDriver driver, String direction) {
+            Map<String, Object> params = new HashMap<>();
+            params.put("direction", direction.toLowerCase()); // "up" or "down"
+            driver.executeScript("mobile: swipe", params);
+
+    }
+
+    public void scrollUp(AppiumDriver driver) {
+        scroll(driver, "up");
+    }
+
+    public void scrollDown(AppiumDriver driver) {
+        scroll(driver, "down");
     }
 }
 

@@ -34,10 +34,6 @@ public class Login_Elements extends AlertHandler{
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
         waitfn = new WaitFunctions(driver);
-
-
-
-
     }
 
 
@@ -75,20 +71,27 @@ public class Login_Elements extends AlertHandler{
     public WebElement TechnicianUser;
 
 
-    public void StartButton() {
+    public void StartButton(String email,String password) {
 
+        try{
+            if(StartButton.isDisplayed()){
         StartButton.click();
+            }}
+        catch(NoSuchElementException e){
+            LoginApp(email,password);
+        }
     }
 
 
     public void LoginApp(String email, String password){
-       waitfn.sendKeys(ReachEmail, email +Keys.RETURN);
-       waitfn.sendKeys(ReachPassword, password +Keys.RETURN);
+        waitfn.Clear(ReachEmail);
+        waitfn.sendKeys(ReachEmail, email +Keys.RETURN);
+        waitfn.Clear(ReachPassword);
+        waitfn.sendKeys(ReachPassword, password +Keys.RETURN);
 
     }
 
     public void Logout(){
-
         waitfn.clickElement(SettingsIcon);
         waitfn.clickElement(Logout);
         waitfn.Visibility(LogoutPopup);

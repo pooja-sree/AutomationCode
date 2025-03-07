@@ -5,31 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2637dba5-c99c-412e-bcdf-0c4e2b758e20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScripts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/report/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/report/report.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/EventCreate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/LoginApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/Pages/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/main/java/org/Reach/ReachMobile/utils/Wait.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/Testcase/CreateEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/Testcase/LoginCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/Runner/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/StepDefinitions/AppiumDriverManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/java/org/Reach/StepDefinitions/LaunchApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/resources/Feature/ALaunch.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReachMobileScripts/src/test/resources/Feature/EventCreation.feature" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Pages/ServiceEvent_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/report/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/report/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/report/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Pages/Login_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Pages/Login_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/WaitFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/main/java/org/Reach/iOS/Utils/WaitFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/test/java/org/Reach/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/test/java/org/Reach/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/test/java/org/Reach/StepDefinitions/LaunchApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReachMobileScriptsiOS/src/test/java/org/Reach/StepDefinitions/LaunchApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pooja-sree"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pooja-sree/AutomationCode.git",
+    "accountId": "95146e8b-7a57-4a62-ada3-2466c56c9fc6"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -185,6 +182,7 @@
       <workItem from="1740467786708" duration="1411000" />
       <workItem from="1740474079831" duration="584000" />
       <workItem from="1740476024346" duration="578000" />
+      <workItem from="1741329140468" duration="465000" />
     </task>
     <servers />
   </component>

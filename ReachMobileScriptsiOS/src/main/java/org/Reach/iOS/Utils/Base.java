@@ -14,8 +14,8 @@ public class Base {
                 System.out.println("🚀 Starting driver...");
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setCapability("platformName", "iOS");
-                capabilities.setCapability("appium:deviceName", "iPhone 12");
-                capabilities.setCapability("appium:udid", "00008101-0018042A363A001E");
+                capabilities.setCapability("appium:deviceName", "iphone 12");
+                capabilities.setCapability("appium:udid", "8F630ACB-6FE4-41B1-BC83-F3CBF4A53EEF");
                 capabilities.setCapability("appium:automationName", "XCUITest");
                 capabilities.setCapability("appium:bundleId", "com.reach.wfd-app");
                 capabilities.setCapability("appium:wdaLocalPort", 8100);

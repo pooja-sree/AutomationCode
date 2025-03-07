@@ -28,7 +28,7 @@ public class LaunchApp {
     @Given("I launch the app on the emulator")
     public void iLaunchTheAppOnTheEmulator() {
         System.out.println("🔥 Step: Launching app on emulator...");
-//        LoginObj.StartButton();
+
 
     }
 
@@ -40,13 +40,13 @@ public class LaunchApp {
             System.out.println("Starting to enter credentials");
             switch (User){
                 case "SC-Admin":
-                    LoginObj.LoginToApplication(email, password);
+                    LoginObj.StartButton(email, password);
                     valid.AdminUser("SC-ADMIN","Admin has logged in");
                     LoginObj.LogoutOfApplication();
                     break;
 
                 case "SC-Technician":
-                    LoginObj.LoginToApplication(email, password);
+                    LoginObj.StartButton(email, password);
                     valid.TechnicianUser("SC-TECHNICIAN","Technician has logged in");
                     LoginObj.LogoutOfApplication();
                     break;

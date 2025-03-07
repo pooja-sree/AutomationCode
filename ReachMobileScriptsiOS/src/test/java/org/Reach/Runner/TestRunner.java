@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/Feature",
+        features = "src/test/resources/Feature/EventCreation.feature",
         glue = "org.Reach.StepDefinitions",
         plugin = {"html:report/report.html", "json:report/report.json"}
 //        dryRun = true
