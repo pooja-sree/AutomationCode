@@ -18,7 +18,7 @@ public class LoginApplication_Testcase extends Login_Elements {
     public void LoginToApplication(String email, String password) {
 
 
-        LoginApp(email, password);
+        StartButton(email, password);
     }
 
     public void LogoutOfApplication() {

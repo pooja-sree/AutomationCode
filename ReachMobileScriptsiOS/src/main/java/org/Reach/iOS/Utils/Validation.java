@@ -1,20 +1,20 @@
 package org.Reach.iOS.Utils;
 
 import io.appium.java_client.AppiumDriver;
+import org.Reach.iOS.Pages.EventCreation_elements;
 import org.Reach.iOS.Pages.Login_Elements;
-import org.Reach.iOS.Pages.ServiceEvent_Elements;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class Validation {
 
     AppiumDriver driver;
     Login_Elements login;
-    ServiceEvent_Elements service;
     WaitFunctions waitFunctions;
+    EventCreation_elements event;
     public Validation(AppiumDriver driver) {
         this.driver = driver;
         this.login = new Login_Elements(driver);
-        this.service = new ServiceEvent_Elements(driver);
         this.waitFunctions = new WaitFunctions(driver);
 
 
@@ -33,7 +33,11 @@ public class Validation {
     }
 
     public void Equipmentnumber(String ExpectedValue,String message){
-        waitFunctions.Visibility(service.EquipmentProviderIsUnknown);
-        Assert.assertEquals(service.EquipmentProviderIsUnknown.getText(),ExpectedValue,message);
+        waitFunctions.Visibility(event.EquipmentProviderIsUnknown);
+        Assert.assertEquals(event.EquipmentProviderIsUnknown.getText(),ExpectedValue,message);
+    }
+
+    public void EventStatus(WebElement element,String status, String message){
+        Assert.assertEquals(element.getText(),status,message);
     }
 }

@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Automation-mobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ReachMobileScriptsiOS/Untitled/AutomationCode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/untitled folder/AutomationCode" vcs="Git" />
   </component>
 </project>

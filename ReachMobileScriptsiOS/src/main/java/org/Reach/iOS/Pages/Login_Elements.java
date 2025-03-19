@@ -25,7 +25,7 @@ public class Login_Elements extends AlertHandler{
 
     AppiumDriver driver;
     IOSDriver iosDriver;
-  public WaitFunctions waitfn ;
+    public WaitFunctions waitfn ;
 
 
 
@@ -34,6 +34,10 @@ public class Login_Elements extends AlertHandler{
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
         waitfn = new WaitFunctions(driver);
+
+
+
+
     }
 
 
@@ -58,28 +62,31 @@ public class Login_Elements extends AlertHandler{
     @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"\uE65A\"])[2]")
     public WebElement Logout;
 
-   @iOSXCUITFindBy(xpath =  "(//XCUIElementTypeOther[@name=\"Are you sure to logout? Yes No\"])[1]")
-           public WebElement LogoutPopup;
+    @iOSXCUITFindBy(xpath =  "(//XCUIElementTypeOther[@name=\"Are you sure to logout? Yes No\"])[1]")
+    public WebElement LogoutPopup;
 
-   @iOSXCUITFindBy(accessibility = "Yes")
-   public WebElement Yes;
+    @iOSXCUITFindBy(accessibility = "Yes")
+    public WebElement Yes;
 
-   @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-ADMIN\"]")
-   public WebElement AdminUser;
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-ADMIN\"]")
+    public WebElement AdminUser;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"SC-TECHNICIAN\"]")
     public WebElement TechnicianUser;
 
 
-    public void StartButton(String email,String password) {
+    public void StartButton(String email, String password) {
 
         try{
             if(StartButton.isDisplayed()){
-        StartButton.click();
-            }}
-        catch(NoSuchElementException e){
+
+                StartButton.click();
+            }
+
+        }catch (NoSuchElementException e){
             LoginApp(email,password);
         }
+
     }
 
 
@@ -92,6 +99,7 @@ public class Login_Elements extends AlertHandler{
     }
 
     public void Logout(){
+
         waitfn.clickElement(SettingsIcon);
         waitfn.clickElement(Logout);
         waitfn.Visibility(LogoutPopup);
