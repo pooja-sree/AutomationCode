@@ -32,12 +32,15 @@ public class Validation {
         System.out.println("TechnicianUser successfully logged in");
     }
 
-    public void Equipmentnumber(String ExpectedValue,String message){
-        waitFunctions.Visibility(event.EquipmentProviderIsUnknown);
-        Assert.assertEquals(event.EquipmentProviderIsUnknown.getText(),ExpectedValue,message);
+    public void Equipmentnumber(WebElement element,String ExpectedValue,String message){
+        waitFunctions.Visibility(element);
+        Assert.assertEquals(element.getText(),ExpectedValue,message);
     }
 
     public void EventStatus(WebElement element,String status, String message){
+        waitFunctions.Visibility(element);
         Assert.assertEquals(element.getText(),status,message);
     }
+
+
 }

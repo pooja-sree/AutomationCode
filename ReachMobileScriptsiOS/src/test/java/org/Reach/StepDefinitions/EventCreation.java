@@ -1,10 +1,16 @@
 package org.Reach.StepDefinitions;
 
 import io.appium.java_client.AppiumDriver;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.Reach.TestCase.Createevent_Testcase;
 import org.Reach.TestCase.LoginApplication_Testcase;
 import org.Reach.iOS.Utils.Validation;
+import org.checkerframework.checker.units.qual.C;
+
+import java.util.List;
+import java.util.Map;
 
 public class EventCreation {
     AppiumDriver driver;
@@ -20,50 +26,59 @@ public class EventCreation {
 
     }
 
-    @Then("I Enter User {string} Credentials Email {string} and Password {string} to create an event with this Equipment type {string}")
-    public void i_enter_user_credentials_email_and_password_to_create_an_event(String user, String email, String password,String EquipmentType) {
-        System.out.println("Starting to enter Credentials");
-        switch (user){
-            case "SC-Admin":
+    @Then("Create an event {string}")
+    public void createAnEvent(String FeatureName, DataTable EventData) throws InterruptedException {
+        createevent.EventCreation(FeatureName,EventData);
+           }
 
-                switch (EquipmentType){
-                    case "PowerUnit":
-                        loginApp.LoginToApplication(email, password);
-                        System.out.println("Starting to select Equipment");
-                        createevent.powerunitEventCreation();
-                        validation.AdminUser("SC-ADMIN","Admin has logged in");
-                        System.out.println("Event created successfully");
-                        createevent.searchEvent();
-                        createevent.assignEvent();
-                        loginApp.LogoutOfApplication();
-                        break;
+    @Then("Enter Service Details {string}")
+    public void serviceDetails(String FeatureName, DataTable EventData){
+        createevent.serviceEventDetails(FeatureName, EventData);
 
-                    default: System.out.println("Invalid Equipment");
-                }
-                break;
+    }
 
-            case "SC-Technician":
-                loginApp.LoginToApplication(email, password);
-                validation.TechnicianUser("SC-TECHNICIAN","Technician has logged in");
-                createevent.searchEvent();
-                createevent.searchEventID();
-                createevent.eventFlowWithETAAndETC();
+    @Then("Add Attachments {string}")
+    public void attachmentsFromGallery(String Category){
+        createevent.AddAttachments(Category);
+    }
 
+    @And("Search Event")
+    public void searchEvent(){
+        createevent.searchEvent();
+    }
 
-                default: System.out.println("Invalid user");
+    @And("Event Details Action {string}")
+    public void EventDetails(String Action){
+        createevent.EventDetails(Action);
+    }
 
+    @And("Search EventID")
+    public void searchEventID()
+    {
+       createevent.searchEventID();
+    }
 
-        }
+    @And("Assign Technician {string}")
+    public void assignTechnician(String Technician){
+        createevent.AssignTech(Technician);
+    }
 
+    @And("GoBack1")
+    public void Back(){
+        createevent.GoBack1();
+    }
+
+    @And("GoBack2")
+    public void GoBack(){
+        createevent.GoBack2();
+    }
+
+    @Then("Event Action {string} by {string}")
+    public void EventAction(String Action,String user){
+        createevent.EventAction(Action,user);
 
     }
 
 
 
-
-    @Then("Close the Application")
-    public void closeApplication() {
-        loginApp.LogoutOfApplication();
-        driver.quit();
-    }
 }

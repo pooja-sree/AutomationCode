@@ -27,11 +27,13 @@ public class Base {
                 capabilities.setCapability("appium:bundleId", "com.reach.wfd-app");
 //                capabilities.setCapability("appium:permissions", "location=always");
 
+                capabilities.setCapability("appium:sendKeyStrategy", "oneByOne");
+                capabilities.setCapability("appium:shouldUseSingletonTestManager", false);
                 capabilities.setCapability("appium:wdaLocalPort", 8100);
                 capabilities.setCapability("appium:noReset", true);
                 capabilities.setCapability("appium:autoAcceptAlerts", true);
                 capabilities.setCapability("appium:newCommandTimeout", 3600);
-                capabilities.setCapability("appium:maxTypingFrequency", 20);
+                capabilities.setCapability("appium:maxTypingFrequency", 80);
                 capabilities.setCapability("appium:connectHardwareKeyboard", true);
                 capabilities.setCapability("appium:includeSafariInWebviews", true);
 

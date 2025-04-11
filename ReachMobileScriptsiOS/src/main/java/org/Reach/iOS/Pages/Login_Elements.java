@@ -9,6 +9,7 @@ import io.appium.java_client.remote.SupportsContextSwitching;
 import org.Reach.iOS.Utils.AlertHandler;
 import org.Reach.iOS.Utils.Validation;
 import org.Reach.iOS.Utils.WaitFunctions;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
@@ -53,7 +54,14 @@ public class Login_Elements extends AlertHandler{
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"login_button\"]")
     public WebElement LoginButton;
 
-    @iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField[@name=\"reach_password\"]")
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uEBE9\"]")
+    public WebElement openIcon;
+
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"\uEBEB\"]")
+    public WebElement closeIcon;
+
+
+    @iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"reach_password\"]")
     public WebElement ReachPassword;
 
     @iOSXCUITFindBy(accessibility = "\uE672")
@@ -91,10 +99,18 @@ public class Login_Elements extends AlertHandler{
 
 
     public void LoginApp(String email, String password){
-        waitfn.Clear(ReachEmail);
-        waitfn.sendKeys(ReachEmail, email +Keys.RETURN);
-        waitfn.Clear(ReachPassword);
-        waitfn.sendKeys(ReachPassword, password +Keys.RETURN);
+//        waitfn.driverSendKeys(ReachEmail, email);
+        waitfn.enterTextWithVerification(ReachEmail,email);
+        waitfn.clickElement(LoginButton);
+        waitfn.clickElement(LoginButton);
+        waitfn.clickElement(openIcon);
+//        waitfn.driverSendKeys(ReachPassword, password);
+        waitfn.enterTextWithVerification(ReachPassword,password);
+
+        waitfn.clickElement(closeIcon);
+        waitfn.clickElement(closeIcon);
+        waitfn.clickElement(LoginButton);
+
 
     }
 

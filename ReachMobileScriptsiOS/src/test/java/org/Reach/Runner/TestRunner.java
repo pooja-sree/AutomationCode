@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/Feature/EventCreation.feature",
         glue = "org.Reach.StepDefinitions",
-        plugin = {"html:report/report.html", "json:report/report.json"}
+        plugin = {"html:report/report.html", "json:report/report.json"},
+        tags = "@testing"
 //        dryRun = true
 )
 public class TestRunner {

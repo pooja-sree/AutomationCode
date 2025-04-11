@@ -1,14 +1,19 @@
 Feature: Launch application
 
 
-  Scenario Outline:Launch Application
+  Scenario:01 Login into the application as admin
     Given I launch the app on the emulator
-    Then The app should be open
-    Then I Enter User "<User>" Credentials Email "<Email>" and Password "<Password>"
-    Then Close Application
+    When Login as "SC-Admin"
+    |Email                                        |Password  |
+    |poojasree.kaliyaperumal+autoadmin@reach24.net|Welcome123|
+    Then Logout
+
+  Scenario:02 Login into the application as Technician
+    Given I launch the app on the emulator
+    When Login as "SC-Technician"
+      |Email                                        |Password  |
+      |poojasree.kaliyaperumal+autotechnician@reach24.net|welcome123|
+    Then Logout
 
 
-    Examples:
-      |User         | Email                                            | Password |
-      |SC-Admin     |poojasree.kaliyaperumal+autoadmin@reach24.net     |welcome123|
-      |SC-Technician|poojasree.kaliyaperumal+autotechnician@reach24.net|welcome123|
+
